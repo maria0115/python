@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_980b6fe261e8456cb93bc298ac7a3af8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_980b6fe261e8456cb93bc298ac7a3af8" ></div>
+        
+</body>
+<script>    
+    
+            var map_980b6fe261e8456cb93bc298ac7a3af8 = L.map(
+                "map_980b6fe261e8456cb93bc298ac7a3af8",
+                {
+                    center: [36.05507, 129.378187],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae84bbede2ff411bbcabb6c79a7f868b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_980b6fe261e8456cb93bc298ac7a3af8);
+        
+    
+            var marker_cluster_131bb75fef9547cc9e01372bfede1f46 = L.markerClusterGroup(
+                {}
+            );
+            marker_cluster_131bb75fef9547cc9e01372bfede1f46.options.iconCreateFunction =
+                function(cluster) {
+    return L.divIcon({
+    html: '<b>' + cluster.getChildCount() + '</b>',
+    className: 'marker-cluster marker-cluster-large',
+    iconSize: new L.Point(30, 30)
+    });
+};
+            map_980b6fe261e8456cb93bc298ac7a3af8.addLayer(marker_cluster_131bb75fef9547cc9e01372bfede1f46);
+        
+    
+            var marker_863867cc049043dca7be4581238870c2 = L.marker(
+                [36.05506957493539, 129.378187000619],
+                {}
+            ).addTo(marker_cluster_131bb75fef9547cc9e01372bfede1f46);
+        
+    
+        var popup_80ae130bd23544d5b1d3ea456713d87f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c00353380a44326b89a60adb2880139 = $(`<div id="html_6c00353380a44326b89a60adb2880139" style="width: 100.0%; height: 100.0%;">영일대해수욕장</div>`)[0];
+            popup_80ae130bd23544d5b1d3ea456713d87f.setContent(html_6c00353380a44326b89a60adb2880139);
+        
+
+        marker_863867cc049043dca7be4581238870c2.bindPopup(popup_80ae130bd23544d5b1d3ea456713d87f)
+        ;
+
+        
+    
+    
+            var marker_f34cf3544c614dd58397ccafefaa5cf5 = L.marker(
+                [36.1549355691878, 129.398878511548],
+                {}
+            ).addTo(marker_cluster_131bb75fef9547cc9e01372bfede1f46);
+        
+    
+        var popup_eed92071e9584245920fbec7294e6d74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53f236e67603432790075e50a43261cf = $(`<div id="html_53f236e67603432790075e50a43261cf" style="width: 100.0%; height: 100.0%;">오도리간이해수욕장</div>`)[0];
+            popup_eed92071e9584245920fbec7294e6d74.setContent(html_53f236e67603432790075e50a43261cf);
+        
+
+        marker_f34cf3544c614dd58397ccafefaa5cf5.bindPopup(popup_eed92071e9584245920fbec7294e6d74)
+        ;
+
+        
+    
+    
+            var marker_4c31d81bc4424cd4be879f776fb021f3 = L.marker(
+                [36.2016482179639, 129.371254482265],
+                {}
+            ).addTo(marker_cluster_131bb75fef9547cc9e01372bfede1f46);
+        
+    
+        var popup_09798ebe65fc465dabfb1eb294d1c0a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0b2a83365574448bc1591cf82f38fe9 = $(`<div id="html_f0b2a83365574448bc1591cf82f38fe9" style="width: 100.0%; height: 100.0%;">월포해수욕장</div>`)[0];
+            popup_09798ebe65fc465dabfb1eb294d1c0a5.setContent(html_f0b2a83365574448bc1591cf82f38fe9);
+        
+
+        marker_4c31d81bc4424cd4be879f776fb021f3.bindPopup(popup_09798ebe65fc465dabfb1eb294d1c0a5)
+        ;
+
+        
+    
+    
+            var marker_a5be58eebae64c2f90928c93068bc073 = L.marker(
+                [36.07160517955013, 129.3419281580087],
+                {}
+            ).addTo(marker_cluster_131bb75fef9547cc9e01372bfede1f46);
+        
+    
+        var popup_2077a3b4a8f5472886b6b9006e98381f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73f44202fb9b42519ef129137ce04e77 = $(`<div id="html_73f44202fb9b42519ef129137ce04e77" style="width: 100.0%; height: 100.0%;">포항역</div>`)[0];
+            popup_2077a3b4a8f5472886b6b9006e98381f.setContent(html_73f44202fb9b42519ef129137ce04e77);
+        
+
+        marker_a5be58eebae64c2f90928c93068bc073.bindPopup(popup_2077a3b4a8f5472886b6b9006e98381f)
+        ;
+
+        
+    
+    
+            var marker_d976298df9ff490eb0f42a68e9e74f01 = L.marker(
+                [36.0780561712913, 129.56973687334],
+                {}
+            ).addTo(marker_cluster_131bb75fef9547cc9e01372bfede1f46);
+        
+    
+        var popup_cc7ec331cf93442397ab447831e94c89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55224308fc0b47dab78d182c60d4fe4e = $(`<div id="html_55224308fc0b47dab78d182c60d4fe4e" style="width: 100.0%; height: 100.0%;">호미곶</div>`)[0];
+            popup_cc7ec331cf93442397ab447831e94c89.setContent(html_55224308fc0b47dab78d182c60d4fe4e);
+        
+
+        marker_d976298df9ff490eb0f42a68e9e74f01.bindPopup(popup_cc7ec331cf93442397ab447831e94c89)
+        ;
+
+        
+    
+    
+            var marker_966ed33c999146fcbfe3f28de33a5428 = L.marker(
+                [35.8393348165945, 129.209645417434],
+                {}
+            ).addTo(marker_cluster_131bb75fef9547cc9e01372bfede1f46);
+        
+    
+        var popup_315142961ec9499491f514c22160207e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c0c8fa97a88459c8b5e45471851fc0b = $(`<div id="html_3c0c8fa97a88459c8b5e45471851fc0b" style="width: 100.0%; height: 100.0%;">황리단길</div>`)[0];
+            popup_315142961ec9499491f514c22160207e.setContent(html_3c0c8fa97a88459c8b5e45471851fc0b);
+        
+
+        marker_966ed33c999146fcbfe3f28de33a5428.bindPopup(popup_315142961ec9499491f514c22160207e)
+        ;
+
+        
+    
+    
+            var layer_control_9a6a3a18d9c348529a941dd88c22b476 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ae84bbede2ff411bbcabb6c79a7f868b,
+                },
+                overlays :  {
+                    "Pohang" : marker_cluster_131bb75fef9547cc9e01372bfede1f46,
+                },
+            };
+            L.control.layers(
+                layer_control_9a6a3a18d9c348529a941dd88c22b476.base_layers,
+                layer_control_9a6a3a18d9c348529a941dd88c22b476.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_980b6fe261e8456cb93bc298ac7a3af8);
+        
+</script>

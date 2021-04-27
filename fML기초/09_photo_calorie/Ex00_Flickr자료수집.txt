@@ -1,0 +1,25 @@
+
+## Flickr
+
+    https://www.flicker.com
+    
+## Flickr API 사용하여 이미지 수집하기
+
+1. 키 얻기
+    (1) 회원가입
+    (2) https://www.flickr.com/services/api/
+    (3) 상단에 [App 제작 (Create an App)] 
+    (4) API 키 가져오기 - [ API 키 요청 ] 선택
+    (5) [비상업용 키 신청 ]
+    (6) app에 대한 설명은 간략하게 "공부를 위한 테스트 용이라고 기술"
+        규약에 체크하고 [등록] 버튼
+    (7) 키와 비밀(password)를 복사해 둔다
+    
+    
+2. Flickr API를 사용하기 위한 모듈 설치
+    pip install flickrapi
+    
+    
+    
+
+
